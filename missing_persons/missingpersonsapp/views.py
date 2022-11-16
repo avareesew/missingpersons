@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def indexPageView(request):
     return render(request, 'missingpersonsapp/index.html')
+
+def statisticsPageView(request):
+    return render(request, 'missingpersonsapp/statistics.html')
