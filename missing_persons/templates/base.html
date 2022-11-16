@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,23 +13,35 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <title>Missing Persons</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css'%}"
+    />
   </head>
   <body>
     <nav class="basenav">
       <div>
-        <a class="homelink" href="#" style="color:rgb(230, 245, 85);">MISSING</a>
+        <a
+          class="homelink"
+          href="{% url 'index'%}"
+          style="color: rgb(230, 245, 85)"
+          >MISSING</a
+        >
       </div>
       <div>
         <ui class="pagelinks">
-          <li><a class="pagelinks" href="statistics.html">Statistics</a></li>
-          <li><a class="pagelinks" href="#">Be Present</a></li>
-          <li><a class="pagelinks" href="#">Resources</a></li>
+          <li>
+            <a class="pagelinks" href="{%url 'statistics'%}">Statistics</a>
+          </li>
+          <li>
+            <a class="pagelinks" href="{%url 'bepresent'%}">Be Present</a>
+          </li>
+          <li><a class="pagelinks" href="{%url 'resources'%}">Resources</a></li>
         </ui>
       </div>
     </nav>
-    <div>
-    {% block content%} 
-    {% endblock %}
-    </div>
+
+    <div>{% block content%} {% endblock %}</div>
   </body>
 </html>

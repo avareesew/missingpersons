@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {%block content%}
+{% extends 'base.html' %} {% load static %} {%block content%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,28 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Statistics</title>
-    <link rel="stylesheet" href="../styles.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/styles.css%' %}"
+    />
   </head>
   <body>
     <div class="background2">
+      <br>
+      <h2 class="tabletitle">Table: Missing Children From Utah</h2>
       <div class="tablecontainer">
         <table class="table table-bordered table-hover table-condensed">
           <thead>
             <tr>
-              <th title="Field #1">date_missing</th>
-              <th title="Field #2">last_name</th>
-              <th title="Field #3">first_name</th>
-              <th title="Field #4">age_at_missing</th>
-              <th title="Field #5">city</th>
-              <th title="Field #6">state</th>
-              <th title="Field #7">gender</th>
-              <th title="Field #8">race</th>
+              <th class="tableheader" title="Field #1">date missing</th>
+              <th class="tableheader" title="Field #2">last name</th>
+              <th class="tableheader" title="Field #3">first name</th>
+              <th class="tableheader" title="Field #4">age at missing</th>
+              <th class="tableheader" title="Field #5">city</th>
+              <th class="tableheader" title="Field #6">state</th>
+              <th class="tableheader" title="Field #7">gender</th>
+              <th class="tableheader" title="Field #8">race</th>
             </tr>
           </thead>
           <tbody>
