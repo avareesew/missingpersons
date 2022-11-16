@@ -1,4 +1,4 @@
-
+{% extends 'base.html' %} {% load static %} {%block content%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,179 +10,15 @@
     <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <table class="table table-bordered table-hover table-condensed">
-        <thead><tr>
-        <th title="Field #1">date_missing</th>
-        <th title="Field #2">last_name</th>
-        <th title="Field #3">first_name</th>
-        <th title="Field #4">age_at_missing</th>
-        <th title="Field #5">city</th>
-        <th title="Field #6">state</th>
-        <th title="Field #7">gender</th>
-        <th title="Field #8">race</th>
-        </tr></thead>
-        <tbody><tr>
-        <td class="tableitem">10/30/2009</td>
-        <td class="tableitem" class="tableitem">Sharmarice</td>
-        <td class="tableitem">Halima</td>
-        <td class="tableitem" align="right">14</td>
-        <td class="tableitem">Granger</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">F</td>
-        <td class="tableitem">W</td>
-        </tr>
-        <tr>
-        <td class="tableitem">10/16/2015</td>
-        <td class="tableitem">Martinez</td>
-        <td class="tableitem">Kimberly</td>
-        <td class="tableitem" align="right">16</td>
-        <td class="tableitem">West Valley City</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">F</td>
-        <td class="tableitem">M</td>
-        </tr>
-        <tr>
-        <td class="tableitem">07/23/2004</td>
-        <td class="tableitem">Gomez</td>
-        <td class="tableitem">Brenda</td>
-        <td class="tableitem" align="right">3</td>
-        <td class="tableitem">Logan</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">F</td>
-        <td class="tableitem">H</td>
-        </tr>
-        <tr>
-        <td class="tableitem">05/25/2003</td>
-        <td class="tableitem">Bishop</td>
-        <td class="tableitem">Acacia</td>
-        <td class="tableitem" align="right">1</td>
-        <td class="tableitem">Salt Lake City</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">F</td>
-        <td class="tableitem">W</td>
-        </tr>
-        <tr>
-        <td class="tableitem">08/03/2020</td>
-        <td class="tableitem">Salazar</td>
-        <td class="tableitem">Maria</td>
-        <td class="tableitem" align="right">14</td>
-        <td class="tableitem">Snowville</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">F</td>
-        <td class="tableitem">H</td>
-        </tr>
-        <tr>
-        <td class="tableitem">04/09/2020</td>
-        <td class="tableitem">Hernandez-Soto</td>
-        <td class="tableitem">Peggy</td>
-        <td class="tableitem" align="right">6</td>
-        <td class="tableitem">Ogden</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">F</td>
-        <td class="tableitem">H</td>
-        </tr>
-        <tr>
-        <td class="tableitem">06/24/2021</td>
-        <td class="tableitem">Jimenez</td>
-        <td class="tableitem">Lucero</td>
-        <td class="tableitem" align="right">14</td>
-        <td class="tableitem">West Valley City</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">F</td>
-        <td class="tableitem">H</td>
-        </tr>
-        <tr>
-        <td class="tableitem">11/08/2013</td>
-        <td class="tableitem">Colindres-Avila</td>
-        <td class="tableitem">Yuris</td>
-        <td class="tableitem" align="right">17</td>
-        <td class="tableitem">West Valley City</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">F</td>
-        <td class="tableitem">M</td>
-        </tr>
-        <tr>
-        <td class="tableitem">07/15/2021</td>
-        <td class="tableitem">Harris</td>
-        <td class="tableitem">Kandis</td>
-        <td class="tableitem" align="right">16</td>
-        <td class="tableitem">Salt Lake City</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">F</td>
-        <td class="tableitem">W</td>
-        </tr>
-        <tr>
-        <td class="tableitem">07/30/2006</td>
-        <td class="tableitem">Seal</td>
-        <td class="tableitem">Jaydan</td>
-        <td class="tableitem" align="right">1</td>
-        <td class="tableitem">Garleys Wash</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">M</td>
-        <td class="tableitem">W</td>
-        </tr>
-        <tr>
-        <td class="tableitem">06/13/2018</td>
-        <td class="tableitem">Lizarraga</td>
-        <td class="tableitem">Jose</td>
-        <td class="tableitem" align="right">13</td>
-        <td class="tableitem">West Valley City</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">M</td>
-        <td class="tableitem">H</td>
-        </tr>
-        <tr>
-        <td class="tableitem">04/23/2020</td>
-        <td class="tableitem">Cortez Trujillo</td>
-        <td class="tableitem">Eztli</td>
-        <td class="tableitem" align="right">21</td>
-        <td class="tableitem">North Ogden</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">M</td>
-        <td class="tableitem">H</td>
-        </tr>
-        <tr>
-        <td class="tableitem">10/25/2017</td>
-        <td class="tableitem">Fowles</td>
-        <td class="tableitem">Juan</td>
-        <td class="tableitem" align="right">15</td>
-        <td class="tableitem">Lehi</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">M</td>
-        <td class="tableitem">M</td>
-        </tr>
-        <tr>
-        <td class="tableitem">08/20/2012</td>
-        <td class="tableitem">Garcia</td>
-        <td class="tableitem">Isai</td>
-        <td class="tableitem" align="right">17</td>
-        <td class="tableitem">West Valley City</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">M</td>
-        <td class="tableitem">M</td>
-        </tr>
-        <tr>
-        <td class="tableitem">09/01/2015</td>
-        <td class="tableitem">Smith</td>
-        <td class="tableitem">Macin</td>
-        <td class="tableitem" align="right">17</td>
-        <td class="tableitem">St. George</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">M</td>
-        <td class="tableitem">W</td>
-        </tr>
-        <tr>
-        <td class="tableitem">01/26/2006</td>
-        <td class="tableitem">Sisco-Ramirez</td>
-        <td class="tableitem">Jose</td>
-        <td class="tableitem" align="right">4</td>
-        <td class="tableitem">West Valley City</td>
-        <td class="tableitem">UT</td>
-        <td class="tableitem">M</td>
-        <td class="tableitem">M</td>
-        </tr>
-        </tbody></table>
+    <div class="background2">
+        <br>
+        <h1 class="generictitle">The Human Trafficking Crisis</h1>
+        <br>
+        <div class="textbox">
+        <p>There are more humans in slavery today than any other time in history</p>
+        </div>
+    </div>
 </body>
 </html>
-
+{%endblock%}
 

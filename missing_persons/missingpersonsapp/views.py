@@ -8,3 +8,7 @@ def indexPageView(request):
 
 def statisticsPageView(request):
     return render(request, 'missingpersonsapp/statistics.html')
+def bePresentPageView(request):
+    return render(request, 'missingpersonsapp/bepresent.html')
+def resourcesPageView(request):
+    return render(request, 'missingpersonsapp/resources.html')
